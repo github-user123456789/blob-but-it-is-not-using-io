@@ -141,7 +141,7 @@ Blob.pad = function(self, size, position, ...)
 
   assert(size, "size must be specified")
   -- Size can be a number
-  if type(size) == "number" then ; -- skip the other checks
+  if type(size) == "number" then -- skip the other checks
   -- Size can also refer to a custom type. The varargs can be used to pass
   -- arguments to that custom type.
   elseif Blob.types[size] then
