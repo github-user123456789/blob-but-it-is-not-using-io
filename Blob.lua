@@ -130,9 +130,9 @@ Blob.pad = function(self, size, position, ...)
   -- if no position was specified, calculate the padding relative to the start
   if position == nil then position = 1
   -- A position can be a numeric value
-  elseif type(position) == "number" then ; -- skip the other checks
+  elseif type(position) == "number" then -- skip the other checks
   -- Padding with absolute position will skip `size` byes:
-  elseif position == "absolute" then ;
+  elseif position == "absolute" then
   -- A position can also refer to a previously saved marker
   elseif self.markers[position] then position = self.markers[position]
   else
